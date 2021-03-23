@@ -1,0 +1,27 @@
+{
+  "name": "JinBlog",
+  "version": "1.0.0",
+  "description": "ㄴㅏ만의 블로그 만들기 프로젝트",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jin0kim326/JinBlog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jin0kim326/JinBlog/issues"
+  },
+  "homepage": "https://github.com/jin0kim326/JinBlog#readme",
+  "dependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.12",
+    "@babel/preset-env": "^7.13.12",
+    "core-js": "^3.9.1",
+    "express": "^4.17.1"
+  },
+  "type": "module"
+}
