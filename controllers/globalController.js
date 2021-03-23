@@ -1,5 +1,3 @@
-import express from "express";
-
-export const home = (res, req) => {
+export const home = (req, res) => {
   res.send("hello, my First Home");
 };

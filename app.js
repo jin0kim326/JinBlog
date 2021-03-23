@@ -1,16 +1,10 @@
 import "core-js";
 import express from "express";
-// import routes from "./routes";
+import routes from "./routes.js";
 import globalRouter from "./routers/globalRouter.js";
 
 const app = express();
-const PORT = 3000;
 
-// app.use(routes.home, globalRouter);
-app.use("/", globalRouter);
+app.use(routes.home, globalRouter);
 
-app.listen(PORT, handleListening);
-
-const handleListening = () => {
-  console.log(`✅ Listening at http://localhost:${PORT}`);
-};
+export default app;

@@ -1,10 +1,12 @@
 {
-  "name": "JinBlog",
+  "type": "module",
+  "name": "jinblog",
+  "description": "나만의 블로그 만들기 프로젝트",
   "version": "1.0.0",
-  "description": "ㄴㅏ만의 블로그 만들기 프로젝트",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "babel-node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node init.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,5 @@
     "@babel/preset-env": "^7.13.12",
     "core-js": "^3.9.1",
     "express": "^4.17.1"
-  },
-  "type": "module"
+  }
 }
