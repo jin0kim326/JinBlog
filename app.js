@@ -1,7 +1,7 @@
 import "core-js";
 import express from "express";
-import routes from "./routes.js";
-import globalRouter from "./routers/globalRouter.js";
+import routes from "./routes";
+import globalRouter from "./routers/globalRouter";
 
 const app = express();
 
