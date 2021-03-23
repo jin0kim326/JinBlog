@@ -12,5 +12,5 @@ app.use("/", globalRouter);
 app.listen(PORT, handleListening);
 
 const handleListening = () => {
-  console.log(`✅listening at http://localhost:${PORT}`);
+  console.log(`✅ Listening at http://localhost:${PORT}`);
 };
