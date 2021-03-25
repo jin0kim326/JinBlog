@@ -1,8 +1,9 @@
 const HOME = "/";
-const CATEGORY = "/:category";
+const CATEGORY = "/category";
 const ABOUT = "/about";
 const CONTACT = "/contact";
 const POST = "/:post";
+const SEARCH = "/search";
 
 const routes = {
   home: HOME,
@@ -10,6 +11,7 @@ const routes = {
   about: ABOUT,
   contact: CONTACT,
   post: POST,
+  search: SEARCH,
 };
 
 export default routes;
