@@ -8,6 +8,7 @@ import {
   getWrite,
   postWrite,
 } from "../controllers/postController";
+import { ImageUpload } from "../middlewares";
 
 const globalRouter = express.Router();
 
@@ -17,7 +18,7 @@ globalRouter.get(routes.category, category);
 globalRouter.get(routes.search, search);
 
 globalRouter.get(routes.write, getWrite);
-globalRouter.post(routes.write, postWrite);
+globalRouter.post(routes.write, ImageUpload, postWrite);
 
 globalRouter.get(routes.home, home);
 globalRouter.get(routes.post, post);

@@ -19,12 +19,13 @@ export const getWrite = (req, res) => {
 
 export const postWrite = async (req, res) => {
   const {
-    body: { title, thumbnail, description },
+    body: { title, description },
+    file: { location },
   } = req;
   try {
     const newPost = await Post.create({
       title,
-      thumbnail,
+      thumbnail: location,
       description,
     });
     res.redirect(routes.home);
