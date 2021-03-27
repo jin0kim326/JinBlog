@@ -1,11 +1,15 @@
-export const home = (req, res) => {
-  res.render("home");
+import routes from "../routes";
+import Post from "../models/post";
+
+export const home = async (req, res) => {
+  const posts = await Post.find({});
+  res.render("home", { pageTitle: "home", posts });
 };
 
 export const about = (req, res) => {
-  res.send("About");
+  res.render("about", { pageTitle: "about" });
 };
 
 export const contact = (req, res) => {
-  res.send("contact");
+  res.render("contact", { pageTitle: "contact" });
 };

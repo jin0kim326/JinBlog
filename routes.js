@@ -4,6 +4,7 @@ const ABOUT = "/about";
 const CONTACT = "/contact";
 const POST = "/:post";
 const SEARCH = "/search";
+const WRITE = "/write";
 
 const routes = {
   home: HOME,
@@ -12,6 +13,7 @@ const routes = {
   contact: CONTACT,
   post: POST,
   search: SEARCH,
+  write: WRITE,
 };
 
 export default routes;

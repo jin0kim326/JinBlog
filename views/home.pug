@@ -1,4 +1,11 @@
-html
-    head
-    body
-        h1 my first blog
+extends layouts/homeLayout
+include mixins/postBlock
+
+block content
+    each post in posts
+        +postBlock({
+            thumnbail: post.thumbnail,
+            title: post.title,
+            description: post.description
+
+        })
