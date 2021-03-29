@@ -6,11 +6,6 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-export const localMiddleware = (req, res, next) => {
-  res.locals.routes = routes;
-  next();
-};
-
 const s3 = new aws.S3({
   accessKeyId: process.env.AWS_ACCESS_ID,
   secretAccessKey: process.env.AWS_ACCESS_SECRET,
@@ -26,3 +21,8 @@ const multerImage = multer({
 });
 
 export const ImageUpload = multerImage.single("thumbnail");
+
+export const localMiddleware = (req, res, next) => {
+  res.locals.routes = routes;
+  next();
+};

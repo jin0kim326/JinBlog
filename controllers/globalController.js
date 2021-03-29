@@ -3,6 +3,7 @@ import Post from "../models/post";
 
 export const home = async (req, res) => {
   const posts = await Post.find({});
+  console.log(posts);
   res.render("home", { pageTitle: "home", posts });
 };
 

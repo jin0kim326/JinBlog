@@ -17,5 +17,6 @@ app.use(bodyParser.json());
 
 app.use(localMiddleware);
 app.use(routes.home, globalRouter);
+app.use(routes.post, postRouter);
 
 export default app;

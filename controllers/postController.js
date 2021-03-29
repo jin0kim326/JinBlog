@@ -5,8 +5,17 @@ export const category = (req, res) => {
   res.render("category", { pageTitle: "category" });
 };
 
-export const post = (req, res) => {
-  res.render("post", { pageTitle: "post" });
+export const post = async (req, res) => {
+  const {
+    params: { id },
+  } = req;
+  console.log(`id : ${id}`);
+  try {
+    const post = await Post.findById(id);
+    res.render("post", { pageTitle: "post", post });
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 export const search = (req, res) => {

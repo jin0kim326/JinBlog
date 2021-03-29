@@ -1,4 +1,9 @@
-extends layouts/main
+extends layouts/homeLayout
+include mixins/postBlock
 
 block content
-    h1 post
+    +postBlock({
+        thumbnail: post.thumbnail,
+        title: post.title,
+        description: post.description
+    })
