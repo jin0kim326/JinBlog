@@ -9,7 +9,6 @@ export const post = async (req, res) => {
   const {
     params: { id },
   } = req;
-  console.log(`id : ${id}`);
   try {
     const post = await Post.findById(id);
     res.render("post", { pageTitle: "post", post });

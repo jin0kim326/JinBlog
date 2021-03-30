@@ -6,6 +6,7 @@ import globalRouter from "./routers/globalRouter";
 import postRouter from "./routers/postRouter";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
+import nodemailer from "nodemailer";
 
 dotenv.config();
 

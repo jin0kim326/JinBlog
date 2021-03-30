@@ -1,4 +1,10 @@
 extends layouts/main
 
 block content
-    h1 contact
+    form(action=routes.contact, method="post" )
+
+        input(type="text", id="name" name="name" placeholder="Name")
+        input(type="text", id="email" name="email" placeholder="Email")
+        textarea(name="message",  placeholder="Message" required=true)
+        input(type="submit" value="SEND MESSAGE")
+
