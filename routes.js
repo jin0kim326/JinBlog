@@ -3,6 +3,7 @@ const CATEGORY = "/category";
 const ABOUT = "/about";
 const CONTACT = "/contact";
 const SEARCH = "/search";
+const SETTINGS = "/settings";
 
 // POST
 const POST = "/post";
@@ -24,6 +25,7 @@ const routes = {
   },
   search: SEARCH,
   write: WRITE,
+  settings: SETTINGS,
 };
 
 export default routes;

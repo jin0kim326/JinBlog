@@ -1,3 +1,5 @@
+"use strict";
+
 import Post from "../models/post";
 import routes from "../routes";
 

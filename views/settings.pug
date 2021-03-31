@@ -1,0 +1,9 @@
+extends layouts/main
+include mixins/categoryBlock
+
+block content
+    each category in categorys
+        +categoryBlock({
+            name: category.name
+        })
+    

@@ -1,3 +1,5 @@
+"use strict";
+
 import routes from "./routes";
 import multer from "multer";
 import multerS3 from "multer-s3";

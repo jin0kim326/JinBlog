@@ -5,6 +5,8 @@ import {
   getContact,
   postContact,
   home,
+  getSettings,
+  postSettings,
 } from "../controllers/globalController";
 import { category, search } from "../controllers/postController";
 
@@ -15,7 +17,8 @@ globalRouter.get(routes.contact, getContact);
 globalRouter.post(routes.contact, postContact);
 globalRouter.get(routes.category, category);
 globalRouter.get(routes.search, search);
-
+globalRouter.get(routes.settings, getSettings);
+globalRouter.post(routes.settings, postSettings);
 globalRouter.get(routes.home, home);
 
 export default globalRouter;
