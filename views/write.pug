@@ -1,7 +1,7 @@
 extends layouts/main
 
 block content
-    form(action=`${routes.write}`, method="post" enctype="multipart/form-data")
+    form(action=`/post${routes.write}`, method="post" enctype="multipart/form-data")
         input(type="text", id="title" name="title" placeholder="제목을 입력하세요")
         .thumbnail
             label(for="thumbnail") 대표 사진

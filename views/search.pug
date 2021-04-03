@@ -1,4 +1,6 @@
 extends layouts/main
 
 block content
-    h1 search
+    form(action=routes.search, method="post")
+        input(type="text", name="term", placeholder="Search here..")
+        input(type="submit" value="Search") 

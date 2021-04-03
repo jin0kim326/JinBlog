@@ -19,8 +19,23 @@ export const post = async (req, res) => {
   }
 };
 
-export const search = (req, res) => {
+export const getSearch = (req, res) => {
   res.render("search", { pageTitle: "search" });
+};
+
+export const postSearch = async (req, res) => {
+  const {
+    body: { term: searchingBy },
+  } = req;
+  let posts = [];
+  try {
+    posts = await Post.find({
+      title: { $regex: searchingBy, $options: "i" },
+    });
+  } catch (error) {
+    console.log(error);
+  }
+  res.render("home", { pageTitle: "home", searchingBy, posts });
 };
 
 export const getWrite = (req, res) => {

@@ -14,6 +14,8 @@ dotenv.config();
 
 const app = express();
 app.set("view engine", "pug");
+//app.use("/assets", express.static("assets"));
+app.use("/assets", express.static(__dirname + "/assets"));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
