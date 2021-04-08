@@ -3,10 +3,21 @@ html
     head
         link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU", crossorigin="anonymous")
         link(rel="stylesheet", href="/assets/css/styles.css")
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet")
+        link(rel="icon", href="https://jin-blog.s3.ap-northeast-2.amazonaws.com/image/favicon2.png")
         title #{pageTitle} 
     body
-        haeder
-            h3 Hi, My name is Jinyoung
+        section
+            .container
+                img(class= "avatar" src="https://jin-blog.s3.ap-northeast-2.amazonaws.com/avatar/avatar1.jpeg")
+                .column-text
+                    h1 Hi. i am </br>Haechena Dev 
+                    p 해결하고 채우고 나누는 개발자 </br> 저는 김진영 입니다.
+                    .link-list
+                        i.fab.fa-github-square
+                        i.fab.fa-blogger-b
+                        <i class="fas fa-blog"></i>
         include ../partials/navbar
         main
             block content

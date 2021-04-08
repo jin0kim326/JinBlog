@@ -1,1 +1,8 @@
+@import "config/reset.css";
+@import "config/variables.css";
+
+@import "pages/home.css";
+
+@import "partials/navbar.css";
+
 @import "main.css";

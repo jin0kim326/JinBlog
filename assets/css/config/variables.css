@@ -1,0 +1,12 @@
+:root {
+  /* color */
+  --color-white: #fff;
+
+  --color-font-black: #111;
+
+  /* icon */
+  --color-icon-link: #333333;
+
+  /* space */
+  --base-margin: 30px;
+}
